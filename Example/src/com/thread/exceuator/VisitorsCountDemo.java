@@ -9,7 +9,7 @@ public class VisitorsCountDemo {
 	public static void main(String[] args) throws InterruptedException {
 		VisitorsCount visitorsCount = new VisitorsCount();
 		ExecutorService execuatorService = Executors.newFixedThreadPool(4);
-		for(int i=0;i<200;i++) {
+		for(int i=0;i<2000;i++) {
 			execuatorService.submit(visitorsCount);
 		}
 		execuatorService.shutdown();
